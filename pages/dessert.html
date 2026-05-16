@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Desserts</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #fff8f0, #ffe5d9);
+            font-family: Arial, sans-serif;
+        }
+
+        .hero-section {
+            background: url('https://media.istockphoto.com/id/2207512117/photo/dessert-background-with-a-selection-of-sweets-top-view-on-a-dark-stone-background.jpg?s=612x612&w=0&k=20&c=Sek8Qu_b3eNvZ07bH54hpT7fKx8qpgUdQVScoU4k4zA=') center/cover;
+            height: 350px;
+            position: relative;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.55);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-title {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .food-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            height: 100%;
+        }
+
+        .food-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .food-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .rating {
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        .food-location {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .dropdown-item.active {
+            background-color: #ffc107;
+            color: #000;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold text-warning" href="/pages/homepage.html">
+                <i class="bi bi-egg-fried me-2"></i>THE UMAMI GUIDE
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/homepage.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/popular-foods.html">Popular Foods</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Food Categories
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pages/main-course.html">🍛 Main Course</a></li>
+                            <li><a class="dropdown-item active" href="/pages/dessert.html">🍰 Desserts</a></li>
+                            <li><a class="dropdown-item" href="/pages/drinks.html">🥤 Drinks</a></li>
+                            <li><a class="dropdown-item" href="/pages/street-foods.html">🌮 Street Foods</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/about.html">About</a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex ms-lg-4 mt-3 mt-lg-0">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search foods...">
+                    <button class="btn btn-warning rounded-pill px-4" type="submit">
+                        Search
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div>
+                <h1 class="hero-title">🍡 Desserts</h1>
+                <p class="text-white text-center">Sweet treats from Japan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="container py-5">
+
+        <h2 class="text-center section-title mb-5">
+            Popular Japanese Desserts
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- MOCHI -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+                    <img src="https://www.zulaykitchen.com/cdn/shop/articles/Chocolate_Covered_Strawberry_Mochi_09a4608f-80f6-4a14-b4c3-0ac2bb1c2110.jpg?v=1766153944&width=2048"
+                        class="card-img-top" alt="Mochi">
+
+                    <div class="card-body">
+                        <h3>🍡 Mochi</h3>
+                        <p class="rating">⭐⭐⭐⭐ (4 / 5)</p>
+                        <p>Chewy rice cake often filled with red bean paste or cream and fruits.</p>
+                        <p class="food-location"><strong>Where to Buy:</strong> Wagashi shops and convenience stores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAIYAKI -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+                    <img src="https://tarasmulticulturaltable.com/wp-content/uploads/2019/02/Chocolate-Hazelnut-Taiyaki-2-of-4.jpg"
+                        class="card-img-top" alt="Taiyaki">
+
+                    <div class="card-body">
+                        <h3>🐟 Taiyaki</h3>
+                        <p class="rating">⭐⭐⭐⭐ (4 / 5)</p>
+                        <p>Fish-shaped cake filled with custard, chocolate, or red bean paste.</p>
+                        <p class="food-location"><strong>Where to Buy:</strong> Street stalls and station shops.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANCAKES -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+                    <img src="https://images.unsplash.com/photo-1559628233-100c798642d4?q=80&w=1200&auto=format&fit=crop"
+                        class="card-img-top" alt="Souffle Pancakes">
+
+                    <div class="card-body">
+                        <h3>🥞 Soufflé Pancakes</h3>
+                        <p class="rating">⭐⭐⭐⭐⭐ (5 / 5)</p>
+                        <p>Ultra fluffy pancakes that are soft, airy, and melt in your mouth.</p>
+                        <p class="food-location"><strong>Where to Buy:</strong> Trendy dessert cafés in Japan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DANGO -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+                    <img src="https://japanesetaste.com/cdn/shop/articles/how-to-make-mitarashi-dango-at-home-japanese-taste_f8f736a5-9d63-49a4-8835-62e4e34a6157.jpg?v=1763445613&width=5760"
+                        class="card-img-top" alt="Dango">
+
+                    <div class="card-body">
+                        <h3>🍡 Dango</h3>
+                        <p class="rating">⭐⭐⭐⭐ (4 / 5)</p>
+                        <p>Skewered rice dumplings glazed with sweet soy sauce or seasonal flavors.</p>
+                        <p class="food-location"><strong>Where to Buy:</strong> Wagashi shops and temples.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PURIN -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+                    <img src="https://sudachirecipes.com/wp-content/uploads/2026/02/oven-baked-purin-thumb.jpg"
+                        class="card-img-top" alt="Purin">
+
+                    <div class="card-body">
+                        <h3>🍮 Purin</h3>
+                        <p class="rating">⭐⭐⭐⭐⭐ (5 / 5)</p>
+                        <p>Japanese custard pudding with smooth texture and caramel sauce topping.</p>
+                        <p class="food-location"><strong>Where to Buy:</strong> Convenience stores (7-Eleven, Lawson).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

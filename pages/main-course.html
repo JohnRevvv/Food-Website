@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Main Course</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #fff8f0, #ffe5d9);
+            font-family: Arial, sans-serif;
+        }
+
+        .hero-section {
+            background: url('https://media.istockphoto.com/id/1403973419/photo/table-top-of-food-spread-on-table.jpg?s=612x612&w=0&k=20&c=2cROUMurZUtuvqF-bp8lViZ0wDXBNkZBcIjQj2QQlec=') center/cover;
+            height: 350px;
+            position: relative;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.55);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-title {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .food-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            height: 100%;
+        }
+
+        .food-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .food-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .rating {
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        .food-location {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .dropdown-item.active {
+            background-color: #ffc107;
+            color: #000;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold text-warning" href="/pages/homepage.html">
+                <i class="bi bi-egg-fried me-2"></i>THE UMAMI GUIDE
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/homepage.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/popular-foods.html">Popular Foods</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Food Categories
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="/pages/main-course.html">🍛 Main Course</a></li>
+                            <li><a class="dropdown-item" href="/pages/dessert.html">🍰 Desserts</a></li>
+                            <li><a class="dropdown-item" href="/pages/drinks.html">🥤 Drinks</a></li>
+                            <li><a class="dropdown-item" href="/pages/street-foods.html">🌮 Street Foods</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/about.html">About</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex ms-lg-4 mt-3 mt-lg-0">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search foods...">
+                    <button class="btn btn-warning rounded-pill px-4" type="submit">
+                        Search
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div>
+                <h1 class="hero-title">
+                    🍛 Main Course Food
+                </h1>
+                <p class="text-white text-center">
+                    Explore Japan’s most delicious and iconic meals
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+
+        <h2 class="text-center section-title mb-5">
+            Popular Japanese Main Course Foods
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- RAMEN -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+
+                    <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?q=80&w=1200&auto=format&fit=crop"
+                        class="card-img-top" alt="Ramen">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            🍜 Ramen
+                        </h3>
+
+                        <p class="rating">
+                            ⭐⭐⭐⭐⭐ (5 / 5)
+                        </p>
+
+                        <p class="card-text">
+                            A comforting and savory noodle soup made with rich broth,
+                            wheat noodles, chashu pork, marinated egg, bamboo shoots,
+                            and green onions.
+                        </p>
+
+                        <p class="food-location">
+                            <strong>Where to Buy:</strong><br>
+                            Ichiran, Ippudo, and local ramen shops across Japan.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUSHI -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=1200&auto=format&fit=crop"
+                        class="card-img-top" alt="Sushi">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            🍣 Sushi
+                        </h3>
+
+                        <p class="rating">
+                            ⭐⭐⭐⭐⭐ (5 / 5)
+                        </p>
+
+                        <p class="card-text">
+                            Japan’s iconic culinary masterpiece featuring vinegared rice
+                            topped with premium fresh seafood like tuna, salmon, and shrimp.
+                        </p>
+
+                        <p class="food-location">
+                            <strong>Where to Buy:</strong><br>
+                            Sushiro, Kura Sushi, and specialized sushi restaurants.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- KATSU CURRY -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LV53kh4XoOrvK-eTi1NP4xOX4QrU0a6Sie1OsmZJz35wcdF79drDlcqx2V9Dqpfkr8MR_jLBEn1n95bQcIFp4r-0v2gRQenccfj7Y9Y&s=10"
+                        class="card-img-top" alt="Katsu Curry">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            🍛 Katsu Curry
+                        </h3>
+
+                        <p class="rating">
+                            ⭐⭐⭐⭐ (4 / 5)
+                        </p>
+
+                        <p class="card-text">
+                            Crispy breaded pork or chicken cutlet served over rice and
+                            covered with thick Japanese curry sauce.
+                        </p>
+
+                        <p class="food-location">
+                            <strong>Where to Buy:</strong><br>
+                            CoCo Ichibanya and Japanese curry houses.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- DONBURI -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop"
+                        class="card-img-top" alt="Donburi">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            🍚 Donburi
+                        </h3>
+
+                        <p class="rating">
+                            ⭐⭐⭐⭐ (4 / 5)
+                        </p>
+
+                        <p class="card-text">
+                            A satisfying rice bowl topped with flavorful ingredients
+                            like beef, onions, eggs, and crispy pork cutlet.
+                        </p>
+
+                        <p class="food-location">
+                            <strong>Where to Buy:</strong><br>
+                            Sukiya, Yoshinoya, and Matsuya branches.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- UDON -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card food-card">
+
+                    <img src="https://images.unsplash.com/photo-1618841557871-b4664fbf0cb3?q=80&w=1200&auto=format&fit=crop"
+                        class="card-img-top" alt="Udon">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            🍜 Udon
+                        </h3>
+
+                        <p class="rating">
+                            ⭐⭐⭐⭐ (4 / 5)
+                        </p>
+
+                        <p class="card-text">
+                            Thick chewy noodles served in a light dashi broth with
+                            toppings like scallions, tempura flakes, and tempura.
+                        </p>
+
+                        <p class="food-location">
+                            <strong>Where to Buy:</strong><br>
+                            Marugame Seimen and traditional udon noodle shops.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
